@@ -1,0 +1,7 @@
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\BondageBedTorture\1.3\Assemblies\SR_DarkArtist.dll
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\BondageBedTorture\Source\SR_DarkArtist\obj\Debug\SR_DarkArtist.csproj.AssemblyReference.cache
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\BondageBedTorture\Source\SR_DarkArtist\obj\Debug\SR_DarkArtist.GeneratedMSBuildEditorConfig.editorconfig
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\BondageBedTorture\Source\SR_DarkArtist\obj\Debug\SR_DarkArtist.AssemblyInfoInputs.cache
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\BondageBedTorture\Source\SR_DarkArtist\obj\Debug\SR_DarkArtist.AssemblyInfo.cs
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\BondageBedTorture\Source\SR_DarkArtist\obj\Debug\SR_DarkArtist.csproj.CoreCompileInputs.cache
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\BondageBedTorture\Source\SR_DarkArtist\obj\Debug\SR_DarkArtist.dll
