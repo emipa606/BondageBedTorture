@@ -1,4 +1,6 @@
 using RimWorld;
+using SR.DA.Patch;
+using SR.DA.Thing;
 using Verse;
 using HediffDefOf = SR.DA.Hediff.HediffDefOf;
 
@@ -35,5 +37,21 @@ public class CompEffectBondageBed : CompUseEffect
                 usedBy.health.AddHediff(sR_Hediff_BondageBed, item2);
             }
         }
+    }
+
+    public override void CompTickRare()
+    {
+        base.CompTickRare();
+        if (parent is not Pawn pawn)
+        {
+            return;
+        }
+
+        if (pawn.CurrentBed() is Building_BondageBed)
+        {
+            return;
+        }
+
+        PatchMain.RemoveBondadgeHediff(pawn);
     }
 }

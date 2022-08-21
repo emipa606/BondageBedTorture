@@ -22,9 +22,13 @@ If you have any problems, tell me in comments, please.
 
 # Warning!
 
+
+
  -  [Bondage bed] can only be used by prisoners,  [Advanced bondage bed] can only be used by colonizer.
  - When this mod is used with **Simple Slave**, **don't** put on or remove slave collar on pawn lying on bondage bed, otherwise bondage bed will be wrongly occupied.
  - When this mod is used with **Set Owner for Prisoner Beds**, if the strapped pawn is assigned another bed, your colonist will relieve the binding of pawn and take him to the designated bed.
+
+
 
 # How to use the Bondage bed (prisoner):
 
