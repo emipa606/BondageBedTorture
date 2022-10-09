@@ -53,7 +53,7 @@ public class JobDriver_UseElectricChair : JobDriver_UseItem
             {
                 initAction = delegate
                 {
-                    pawn.carryTracker.TryDropCarriedThing(Thing.Position, ThingPlaceMode.Direct, out var _);
+                    pawn.carryTracker.TryDropCarriedThing(Thing.Position, ThingPlaceMode.Direct, out _);
                 },
                 defaultCompleteMode = ToilCompleteMode.Instant
             };

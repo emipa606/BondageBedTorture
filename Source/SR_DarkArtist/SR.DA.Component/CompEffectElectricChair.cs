@@ -28,15 +28,16 @@ public class CompEffectElectricChair : CompUseEffect
     public override void ReceiveCompSignal(string signal)
     {
         base.ReceiveCompSignal(signal);
-        if (signal.Equals("HighVoltageOn"))
+        switch (signal)
         {
-            DmgAmount = dmgAmount * 20f;
-            Messages.Message("SR_HighVoltageOn".Translate(), MessageTypeDefOf.NeutralEvent);
-        }
-        else if (signal.Equals("HighVoltageOff"))
-        {
-            DmgAmount = dmgAmount;
-            Messages.Message("SR_HighVoltageOff".Translate(), MessageTypeDefOf.NeutralEvent);
+            case "HighVoltageOn":
+                DmgAmount = dmgAmount * 20f;
+                Messages.Message("SR_HighVoltageOn".Translate(), MessageTypeDefOf.NeutralEvent);
+                break;
+            case "HighVoltageOff":
+                DmgAmount = dmgAmount;
+                Messages.Message("SR_HighVoltageOff".Translate(), MessageTypeDefOf.NeutralEvent);
+                break;
         }
     }
 }

@@ -72,7 +72,7 @@ public class CompUsableRemoveEffectChians : CompUsable
         Scribe_Values.Look(ref isBondaged, "isBondaged");
     }
 
-    public override void TryStartUseJob(Pawn pawn, LocalTargetInfo extraTarget)
+    public override void TryStartUseJob(Pawn pawn, LocalTargetInfo extraTarget, bool forced = false)
     {
         if (!pawn.CanReserveAndReach(extraTarget, PathEndMode.Touch, Danger.Some))
         {

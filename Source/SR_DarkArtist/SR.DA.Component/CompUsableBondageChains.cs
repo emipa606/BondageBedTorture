@@ -83,7 +83,7 @@ public class CompUsableBondageChains : CompUsable
         }
     }
 
-    public override void TryStartUseJob(Pawn pawn, LocalTargetInfo extraTarget)
+    public override void TryStartUseJob(Pawn pawn, LocalTargetInfo extraTarget, bool forced = false)
     {
         if (!pawn.CanReserveAndReach(parent, PathEndMode.Touch, Danger.Some) ||
             !pawn.CanReserveAndReach(extraTarget, PathEndMode.Touch, Danger.Some))

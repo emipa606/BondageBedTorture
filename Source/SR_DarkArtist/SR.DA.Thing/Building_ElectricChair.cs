@@ -51,6 +51,6 @@ public class Building_ElectricChair : Building
 
     private void OnPowerChanged()
     {
-        cpt.PowerOutput = !cpt.PowerOn ? 0f : isUsing ? 0f - workingPower : 0f - cpt.Props.basePowerConsumption;
+        cpt.PowerOutput = !cpt.PowerOn ? 0f : isUsing ? 0f - workingPower : 0f - cpt.Props.PowerConsumption;
     }
 }

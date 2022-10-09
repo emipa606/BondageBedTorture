@@ -1,5 +1,8 @@
 # Changelog for BondageBedTorture
 
+1.4.1 - Mod updated for 1.4 and passed autotests
+
+
 1.3.2 - The bondage-bed hediff will now be removed if the pawn is removed from the bed in any way.
 
 
