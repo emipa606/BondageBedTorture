@@ -17,6 +17,11 @@ public class Building_AdvancedBondageBed : Building_BaseBondageBed
             return;
         }
 
+        if (!SRMod.instance.Settings.ShowBound)
+        {
+            return;
+        }
+
         var green = Color.green;
         GenMapUI.DrawThingLabel(this, "SR_Bound".Translate(), green);
     }

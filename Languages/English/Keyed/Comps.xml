@@ -2,6 +2,9 @@
 <LanguageData>
   <!-- <SR_Bound>束缚</SR_Bound> -->
   <SR_Bound>bound</SR_Bound>
+  <SR_ShowBound>Show bound info</SR_ShowBound>
+  <SR_ShowBoundTT>Shows a bound-text on pawns being bound</SR_ShowBoundTT>
+  <SR_CurrentModVersion>Installed mod-version: {0}</SR_CurrentModVersion>
   <!-- <SR_Release>解放</SR_Release> -->
   <SR_Release>release</SR_Release>
   <!-- <SR_ElectricShock>电击</SR_ElectricShock> -->
