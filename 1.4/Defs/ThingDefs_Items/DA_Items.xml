@@ -21,7 +21,7 @@
       <Flammability>0.2</Flammability>
     </statBases>
     <thingCategories>
-      <li>Items</li>
+      <li>ItemsMisc</li>
     </thingCategories>
     <tradeability>Sellable</tradeability>
     <alwaysHaulable>true</alwaysHaulable>
@@ -73,7 +73,7 @@
       <Flammability>0.2</Flammability>
     </statBases>
     <thingCategories>
-      <li>Items</li>
+      <li>ItemsMisc</li>
     </thingCategories>
     <tradeability>Sellable</tradeability>
     <alwaysHaulable>true</alwaysHaulable>
@@ -92,6 +92,32 @@
         <compClass>SR.DA.Component.CompEffectTokenOfZEUS</compClass>
       </li>
     </comps>
+    <costList>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <Steel>5</Steel>
+      <Plasteel>5</Plasteel>
+      <Uranium>5</Uranium>
+      <Gold>5</Gold>
+      <Jade>5</Jade>
+      <Silver>50</Silver>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisites>
+        <li>SR_RP_Torture</li>
+        <li>Bionics</li>
+      </researchPrerequisites>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>16</Crafting>
+      </skillRequirements>
+      <displayPriority>300</displayPriority>
+    </recipeMaker>
   </ThingDef>
   <!-- 暗黑鞭 -->
   <ThingDef ParentName="ResourceBase">
@@ -114,7 +140,7 @@
       <Flammability>0.2</Flammability>
     </statBases>
     <thingCategories>
-      <li>Items</li>
+      <li>ItemsMisc</li>
     </thingCategories>
     <tradeability>Sellable</tradeability>
     <alwaysHaulable>true</alwaysHaulable>
@@ -168,7 +194,7 @@
       <Flammability>0.2</Flammability>
     </statBases>
     <thingCategories>
-      <li>Items</li>
+      <li>ItemsMisc</li>
     </thingCategories>
     <tradeability>Sellable</tradeability>
     <alwaysHaulable>true</alwaysHaulable>

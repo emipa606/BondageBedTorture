@@ -58,4 +58,4 @@ If you have any problems, tell me in comments, please.
 -  If you have the solution for a problem, please post it to the GitHub repository.
 
 
-https://steamcommunity.com/sharedfiles/filedetails/changelog/2846468041]Last updated 2023-01-09
+https://steamcommunity.com/sharedfiles/filedetails/changelog/2846468041]Last updated 2023-07-01

@@ -17,7 +17,7 @@ internal class SRMod : Mod
     /// <summary>
     ///     The private settings
     /// </summary>
-    private SRSettings settings;
+    public readonly SRSettings Settings;
 
     /// <summary>
     ///     Constructor
@@ -27,23 +27,7 @@ internal class SRMod : Mod
     {
         instance = this;
         currentVersion = VersionFromManifest.GetVersionFromModMetaData(content.ModMetaData);
-    }
-
-    /// <summary>
-    ///     The instance-settings for the mod
-    /// </summary>
-    internal SRSettings Settings
-    {
-        get
-        {
-            if (settings == null)
-            {
-                settings = GetSettings<SRSettings>();
-            }
-
-            return settings;
-        }
-        set => settings = value;
+        Settings = GetSettings<SRSettings>();
     }
 
     /// <summary>
