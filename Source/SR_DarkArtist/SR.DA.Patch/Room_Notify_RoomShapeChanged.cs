@@ -4,7 +4,7 @@ using Verse;
 
 namespace SR.DA.Patch;
 
-[HarmonyPatch(typeof(Room), "Notify_RoomShapeChanged")]
+[HarmonyPatch(typeof(Room), nameof(Room.Notify_RoomShapeChanged))]
 internal class Room_Notify_RoomShapeChanged
 {
     private static void Postfix(ref Room __instance)

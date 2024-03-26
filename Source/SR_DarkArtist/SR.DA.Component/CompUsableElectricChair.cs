@@ -90,13 +90,14 @@ public class CompUsableElectricChair : CompUsable
                 continue;
             }
 
+            string str = "SR_ElectocutionChair".Translate(pawn.Label, prisoner.Label);
+            yield return new FloatMenuOption(str, Action, MenuOptionPriority.DisabledOption);
+            continue;
+
             void Action()
             {
                 TryStartUseJob(pawn, prisoner);
             }
-
-            string str = "SR_ElectocutionChair".Translate(pawn.Label, prisoner.Label);
-            yield return new FloatMenuOption(str, Action, MenuOptionPriority.DisabledOption);
         }
 
         if (!hasPrisoner)

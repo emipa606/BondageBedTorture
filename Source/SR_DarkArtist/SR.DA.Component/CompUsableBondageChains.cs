@@ -66,14 +66,15 @@ public class CompUsableBondageChains : CompUsable
                 continue;
             }
 
+            string str = "SR_BondageChains".Translate(pawn.Named(pawn.Name.ToString()),
+                prisoner.Named(prisoner.Name.ToString()));
+            yield return new FloatMenuOption(str, Action, MenuOptionPriority.DisabledOption);
+            continue;
+
             void Action()
             {
                 TryStartUseJob(pawn, prisoner);
             }
-
-            string str = "SR_BondageChains".Translate(pawn.Named(pawn.Name.ToString()),
-                prisoner.Named(prisoner.Name.ToString()));
-            yield return new FloatMenuOption(str, Action, MenuOptionPriority.DisabledOption);
         }
 
         if (!hasPrisoner)

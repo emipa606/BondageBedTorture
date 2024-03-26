@@ -43,7 +43,8 @@ public class CompHighVoltage : ThingComp
 
             if (parent.Spawned)
             {
-                parent.Map.mapDrawer.MapMeshDirty(parent.Position, MapMeshFlag.Things | MapMeshFlag.Buildings);
+                parent.Map.mapDrawer.MapMeshDirty(parent.Position,
+                    MapMeshFlagDefOf.Things | MapMeshFlagDefOf.Buildings);
             }
         }
     }

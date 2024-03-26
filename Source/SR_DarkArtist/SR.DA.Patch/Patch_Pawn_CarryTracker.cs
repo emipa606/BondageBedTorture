@@ -14,9 +14,10 @@ internal class Patch_Pawn_CarryTracker
 {
     private static IEnumerable<MethodBase> TargetMethods()
     {
-        yield return AccessTools.Method(typeof(Pawn_CarryTracker), "TryStartCarry", new[] { typeof(Verse.Thing) });
-        yield return AccessTools.Method(typeof(Pawn_CarryTracker), "TryStartCarry",
-            new[] { typeof(Verse.Thing), typeof(int), typeof(bool) });
+        yield return AccessTools.Method(typeof(Pawn_CarryTracker), nameof(Pawn_CarryTracker.TryStartCarry),
+            [typeof(Verse.Thing)]);
+        yield return AccessTools.Method(typeof(Pawn_CarryTracker), nameof(Pawn_CarryTracker.TryStartCarry),
+            [typeof(Verse.Thing), typeof(int), typeof(bool)]);
     }
 
     private static void Prefix(Verse.Thing item)

@@ -52,14 +52,14 @@ public class CompUsableBondageBed : CompUsable
                 yield break;
             }
 
+            string str2 = "SR_Release_BondageBed".Translate(bbb.occupant.Label);
+            yield return new FloatMenuOption(str2, Action2, MenuOptionPriority.DisabledOption);
+            yield break;
+
             void Action2()
             {
                 TryReleasePrisoner(pawn, bbb.occupant);
             }
-
-            string str2 = "SR_Release_BondageBed".Translate(bbb.occupant.Label);
-            yield return new FloatMenuOption(str2, Action2, MenuOptionPriority.DisabledOption);
-            yield break;
         }
 
         var hasPrisoner = false;
@@ -79,14 +79,15 @@ public class CompUsableBondageBed : CompUsable
                 continue;
             }
 
+            string str = "SR_BondageBed".Translate(pawn.Named(pawn.Name.ToString()),
+                prisoner.Named(prisoner.Name.ToString()));
+            yield return new FloatMenuOption(str, Action, MenuOptionPriority.DisabledOption);
+            continue;
+
             void Action()
             {
                 TryStartUseJob(pawn, prisoner);
             }
-
-            string str = "SR_BondageBed".Translate(pawn.Named(pawn.Name.ToString()),
-                prisoner.Named(prisoner.Name.ToString()));
-            yield return new FloatMenuOption(str, Action, MenuOptionPriority.DisabledOption);
         }
 
         if (!hasPrisoner)

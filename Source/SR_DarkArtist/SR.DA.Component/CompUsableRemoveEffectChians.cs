@@ -57,13 +57,14 @@ public class CompUsableRemoveEffectChians : CompUsable
             yield break;
         }
 
+        string str = "SR_Release_BondageChains".Translate(parent.Label);
+        yield return new FloatMenuOption(str, Action, MenuOptionPriority.DisabledOption);
+        yield break;
+
         void Action()
         {
             TryStartUseJob(myPawn, parent);
         }
-
-        string str = "SR_Release_BondageChains".Translate(parent.Label);
-        yield return new FloatMenuOption(str, Action, MenuOptionPriority.DisabledOption);
     }
 
     public override void PostExposeData()

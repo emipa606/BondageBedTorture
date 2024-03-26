@@ -7,7 +7,7 @@ using HediffDefOf = SR.DA.Hediff.HediffDefOf;
 
 namespace SR.DA.Patch;
 
-[HarmonyPatch(typeof(Pawn), "Kill")]
+[HarmonyPatch(typeof(Pawn), nameof(Pawn.Kill))]
 internal class Pawn_Kill
 {
     private static bool Prefix(ref Pawn __instance)

@@ -9,7 +9,7 @@ namespace SR.DA.Patch;
 [StaticConstructorOnStartup]
 public class PatchMain
 {
-    public static Harmony instance;
+    public static readonly Harmony instance;
 
     static PatchMain()
     {
