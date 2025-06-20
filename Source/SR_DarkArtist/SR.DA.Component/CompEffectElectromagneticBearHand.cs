@@ -13,7 +13,6 @@ public class CompEffectElectromagneticBearHand : CompUseEffect
     {
         base.DoEffect(usedBy);
         usedBy.needs.mood.thoughts.memories.TryGainMemory(ThoughtDefOf.SR_Thought_Mistreated);
-        var dinfo = new DamageInfo(DamageDefOf.SR_Damage_ElecticShock, dmgAmount);
-        usedBy.TakeDamage(dinfo);
+        usedBy.TakeDamage(new DamageInfo(DamageDefOf.SR_Damage_ElecticShock, dmgAmount));
     }
 }

@@ -75,10 +75,10 @@ public class CompUsableAdvancedBondageBed : CompUsableBondageBed
 
             string str =
                 "SR_BondageBed".Translate(pawn.Named(pawn.Name.ToString()), target.Named(target.Name.ToString()));
-            yield return new FloatMenuOption(str, Action, MenuOptionPriority.DisabledOption);
+            yield return new FloatMenuOption(str, action, MenuOptionPriority.DisabledOption);
             continue;
 
-            void Action()
+            void action()
             {
                 TryStartUseJob(pawn, target);
             }

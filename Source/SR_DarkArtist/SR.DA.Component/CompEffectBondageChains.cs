@@ -11,7 +11,7 @@ public class CompEffectBondageChains : CompUseEffect
     public override void DoEffect(Pawn usedBy)
     {
         base.DoEffect(usedBy);
-        var sR_Hediff_BondageChains = HediffDefOf.SR_Hediff_BondageChains;
+        var sRHediffBondageChains = HediffDefOf.SR_Hediff_BondageChains;
         var partsWithDef = usedBy.RaceProps.body.GetPartsWithDef(BodyPartDefOf.Arm);
         var addedChains = false;
         if (partsWithDef != null)
@@ -23,7 +23,7 @@ public class CompEffectBondageChains : CompUseEffect
                     continue;
                 }
 
-                usedBy.health.AddHediff(sR_Hediff_BondageChains, item);
+                usedBy.health.AddHediff(sRHediffBondageChains, item);
                 addedChains = true;
             }
         }
@@ -38,7 +38,7 @@ public class CompEffectBondageChains : CompUseEffect
                     continue;
                 }
 
-                usedBy.health.AddHediff(sR_Hediff_BondageChains, item2);
+                usedBy.health.AddHediff(sRHediffBondageChains, item2);
                 addedChains = true;
             }
         }

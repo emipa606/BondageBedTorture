@@ -29,8 +29,8 @@ internal class Pawn_Kill
             return true;
         }
 
-        var building_BondageBed = (Building_BaseBondageBed)__instance.CurrentBed();
-        var comp = building_BondageBed.GetComp<CompRemoveEffectBondageBed>();
+        var buildingBondageBed = (Building_BaseBondageBed)__instance.CurrentBed();
+        var comp = buildingBondageBed.GetComp<CompRemoveEffectBondageBed>();
         if (comp == null)
         {
             return true;

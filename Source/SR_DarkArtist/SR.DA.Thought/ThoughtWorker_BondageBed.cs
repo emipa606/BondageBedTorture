@@ -8,13 +8,13 @@ public class ThoughtWorker_BondageBed : ThoughtWorker
 {
     protected override ThoughtState CurrentStateInternal(Pawn p)
     {
-        Building_Bed building_Bed = p.CurrentBed() as Building_AdvancedBondageBed;
-        if (building_Bed != null)
+        Building_Bed buildingBed = p.CurrentBed() as Building_AdvancedBondageBed;
+        if (buildingBed != null)
         {
             return ThoughtState.ActiveAtStage(0);
         }
 
-        building_Bed = p.CurrentBed() as Building_BaseBondageBed;
-        return building_Bed == null ? ThoughtState.Inactive : ThoughtState.ActiveAtStage(1);
+        buildingBed = p.CurrentBed() as Building_BaseBondageBed;
+        return buildingBed == null ? ThoughtState.Inactive : ThoughtState.ActiveAtStage(1);
     }
 }

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <!-- 作为枢纽链接ManeuverDef,在ManeuverDef参数名为requiredCapacity -->
   <ToolCapacityDef>

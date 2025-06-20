@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: use -->
+  <SR_Job_AEUS.reportString>use</SR_Job_AEUS.reportString>
+  <!-- EN: bound -->
+  <SR_Job_BondageBed.reportString>bound</SR_Job_BondageBed.reportString>
+  <!-- EN: bound -->
+  <SR_Job_BondageChains.reportString>bound</SR_Job_BondageChains.reportString>
+  <!-- EN: maltreat -->
+  <SR_Job_ElectricChair.reportString>maltreat</SR_Job_ElectricChair.reportString>
+  <!-- EN: release -->
+  <SR_Job_ReleaseBed.reportString>release</SR_Job_ReleaseBed.reportString>
+  <!-- EN: release -->
+  <SR_Job_ReleaseChains.reportString>release</SR_Job_ReleaseChains.reportString>
+  <!-- EN: maltreat -->
+  <SR_Job_Torture.reportString>maltreat</SR_Job_Torture.reportString>
+</LanguageData>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: advanced bondageBed -->
+  <SR_Building_AdvancedBondageBed.label>advanced bondageBed</SR_Building_AdvancedBondageBed.label>
+  <!-- EN: If your colonists need some hard way to weather the storm,this can help you. Please don't worry, it is very comfortable like a common bed. -->
+  <SR_Building_AdvancedBondageBed.description>If your colonists need some hard way to weather the storm,this can help you. Please don't worry, it is very comfortable like a common bed.</SR_Building_AdvancedBondageBed.description>
+  <!-- EN: bound -->
+  <SR_Building_AdvancedBondageBed.comps.CompUsableAdvancedBondageBed.useLabel>bound</SR_Building_AdvancedBondageBed.comps.CompUsableAdvancedBondageBed.useLabel>
+  <!-- EN: bondageBed -->
+  <SR_Building_BondageBed.label>bondageBed</SR_Building_BondageBed.label>
+  <!-- EN: Bound prisoners on it to make sure that they can't make trouble for you. -->
+  <SR_Building_BondageBed.description>Bound prisoners on it to make sure that they can't make trouble for you.</SR_Building_BondageBed.description>
+  <!-- EN: bound -->
+  <SR_Building_BondageBed.comps.CompUsableBondageBed.useLabel>bound</SR_Building_BondageBed.comps.CompUsableBondageBed.useLabel>
+  <!-- EN: electric chair -->
+  <SR_Building_ElectricChair.label>electric chair</SR_Building_ElectricChair.label>
+  <!-- EN: It is comfortable for Masochists. High voltage mode also can make prisoners die.\n      \nIt need much power in running.Make sure you have enough power to run it. -->
+  <SR_Building_ElectricChair.description>It is comfortable for Masochists. High voltage mode also can make prisoners die.
+      
+It need much power in running.Make sure you have enough power to run it.</SR_Building_ElectricChair.description>
+  <!-- EN: electric shock -->
+  <SR_Building_ElectricChair.comps.CompUsableElectricChair.useLabel>electric shock</SR_Building_ElectricChair.comps.CompUsableElectricChair.useLabel>
+  <!-- EN: poor mattress -->
+  <SR_Building_Mattress.label>poor mattress</SR_Building_Mattress.label>
+  <!-- EN: It's better than nothing. -->
+  <SR_Building_Mattress.description>It's better than nothing.</SR_Building_Mattress.description>
+  <!-- EN: double nice bed -->
+  <SR_DoubleNiceBed.label>double nice bed</SR_DoubleNiceBed.label>
+  <!-- EN: A beautiful bed that fits two people. -->
+  <SR_DoubleNiceBed.description>A beautiful bed that fits two people.</SR_DoubleNiceBed.description>
+  <!-- EN: nice bed -->
+  <SR_NiceBed.label>nice bed</SR_NiceBed.label>
+  <!-- EN: A beautiful bed. -->
+  <SR_NiceBed.description>A beautiful bed.</SR_NiceBed.description>
+  <!-- EN: simple bed -->
+  <SR_SimpleBed.label>simple bed</SR_SimpleBed.label>
+  <!-- EN: A makeshift bed, slightly uncomfortable but can save resources. -->
+  <SR_SimpleBed.description>A makeshift bed, slightly uncomfortable but can save resources.</SR_SimpleBed.description>
+</LanguageData>

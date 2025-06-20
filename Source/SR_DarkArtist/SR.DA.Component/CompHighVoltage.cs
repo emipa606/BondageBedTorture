@@ -7,14 +7,10 @@ namespace SR.DA.Component;
 
 public class CompHighVoltage : ThingComp
 {
-    private const string OffGraphicSuffix = "_Off";
+    private const string HighVoltageOnSignal = "HighVoltageOn";
 
-    public const string HighVoltageOnSignal = "HighVoltageOn";
-
-    public const string HighVoltageOffSignal = "HighVoltageOff";
+    private const string HighVoltageOffSignal = "HighVoltageOff";
     private Texture2D cachedCommandTex;
-
-    private Graphic offGraphic;
 
     private bool switchIsOn;
 
@@ -33,39 +29,19 @@ public class CompHighVoltage : ThingComp
         }
     }
 
-    public bool SwitchIsOn
+    private bool SwitchIsOn
     {
         get => switchIsOn;
         set
         {
             switchIsOn = value;
-            parent.BroadcastCompSignal(switchIsOn ? "HighVoltageOn" : "HighVoltageOff");
+            parent.BroadcastCompSignal(switchIsOn ? HighVoltageOnSignal : HighVoltageOffSignal);
 
             if (parent.Spawned)
             {
                 parent.Map.mapDrawer.MapMeshDirty(parent.Position,
                     MapMeshFlagDefOf.Things | MapMeshFlagDefOf.Buildings);
             }
-        }
-    }
-
-    public Graphic CurrentGraphic
-    {
-        get
-        {
-            if (SwitchIsOn)
-            {
-                return parent.DefaultGraphic;
-            }
-
-            if (offGraphic == null)
-            {
-                offGraphic = GraphicDatabase.Get(parent.def.graphicData.graphicClass,
-                    $"{parent.def.graphicData.texPath}_Off", parent.def.graphicData.shaderType.Shader,
-                    parent.def.graphicData.drawSize, parent.DrawColor, parent.DrawColorTwo);
-            }
-
-            return offGraphic;
         }
     }
 

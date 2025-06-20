@@ -1,0 +1,82 @@
+ManifestFileVersion: 0
+CRC: 1420453120
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1512eb4a82e413c0ca9c760e659b0b3c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 1512eb4a82e413c0ca9c760e659b0b3c
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed/Mattress_south.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed/FineBed_southm.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/ElectricChairm.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed_northm.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed/FineDoubleBed_east.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed/FineDoubleBed_northm.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed/BondageBed_east.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed_east.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed/BondageBed_southm.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/DoubleBed_eastm.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed/SimpleBed_east.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed/AdvancedBondageBed_southm.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed/BondageBedLayerA_northm.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed/FineBed_south.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/ElectricChair.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed/Mattress_southm.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed_south.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Weapon/Sword.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/DoubleBed_east.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed/FineBed_northm.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed/BondageBed_northm.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed/FineBed_east.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed/FineDoubleBed_eastm.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed/BondageBedLayerA_southm.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Item/Chains.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed/FineDoubleBed_southm.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed/Mattress_east.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed_north.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Item/ZEUS.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed/AdvancedBondageBed_northm.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed/SimpleBed_eastm.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed/AdvancedBondageBed_east.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed_eastm.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed/SimpleBed_northm.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed/Mattress_northm.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed/BondageBedLayerA_north.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Item/ElectromagneticBearHand.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed/Mattress_eastm.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed/SimpleBed_north.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Item/DarkWhip.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed/BondageBed_north.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed/BondageBed_south.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/DoubleBed_north.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed/FineBed_eastm.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed_southm.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/DoubleBed_southm.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed/AdvancedBondageBed_north.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/UI/Commands/HighVoltage.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed/BondageBedLayerA_south.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed/SimpleBed_south.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/DoubleBed_northm.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Item/Sword.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/DoubleBed_south.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed/FineDoubleBed_south.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed/SimpleBed_southm.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed/FineBed_north.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed/FineDoubleBed_north.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed/BondageBedLayerA_eastm.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed/Mattress_north.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed/BondageBedLayerA_east.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed/BondageBed_eastm.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed/AdvancedBondageBed_eastm.png
+- Assets/Data/Mlie.BondageBedTorture/Textures/Things/Building/Furniture/Bed/AdvancedBondageBed_south.png
+Dependencies: []

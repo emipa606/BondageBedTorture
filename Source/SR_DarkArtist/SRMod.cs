@@ -10,7 +10,7 @@ internal class SRMod : Mod
     /// <summary>
     ///     The instance of the settings to be read by the mod
     /// </summary>
-    public static SRMod instance;
+    public static SRMod Instance;
 
     private static string currentVersion;
 
@@ -25,7 +25,7 @@ internal class SRMod : Mod
     /// <param name="content"></param>
     public SRMod(ModContentPack content) : base(content)
     {
-        instance = this;
+        Instance = this;
         currentVersion = VersionFromManifest.GetVersionFromModMetaData(content.ModMetaData);
         Settings = GetSettings<SRSettings>();
     }
@@ -46,20 +46,20 @@ internal class SRMod : Mod
     /// <param name="rect"></param>
     public override void DoSettingsWindowContents(Rect rect)
     {
-        var listing_Standard = new Listing_Standard();
-        listing_Standard.Begin(rect);
-        listing_Standard.Gap();
-        listing_Standard.CheckboxLabeled("SR_ShowBound".Translate(), ref Settings.ShowBound,
+        var listingStandard = new Listing_Standard();
+        listingStandard.Begin(rect);
+        listingStandard.Gap();
+        listingStandard.CheckboxLabeled("SR_ShowBound".Translate(), ref Settings.ShowBound,
             "SR_ShowBoundTT".Translate());
         if (currentVersion != null)
         {
-            listing_Standard.Gap();
+            listingStandard.Gap();
             GUI.contentColor = Color.gray;
-            listing_Standard.Label("SR_CurrentModVersion".Translate(currentVersion));
+            listingStandard.Label("SR_CurrentModVersion".Translate(currentVersion));
             GUI.contentColor = Color.white;
         }
 
-        listing_Standard.End();
+        listingStandard.End();
         Settings.Write();
     }
 }

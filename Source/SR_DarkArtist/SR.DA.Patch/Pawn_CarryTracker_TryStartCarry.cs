@@ -10,7 +10,7 @@ using HediffDefOf = SR.DA.Hediff.HediffDefOf;
 namespace SR.DA.Patch;
 
 [HarmonyPatch]
-internal class Patch_Pawn_CarryTracker
+internal class Pawn_CarryTracker_TryStartCarry
 {
     private static IEnumerable<MethodBase> TargetMethods()
     {

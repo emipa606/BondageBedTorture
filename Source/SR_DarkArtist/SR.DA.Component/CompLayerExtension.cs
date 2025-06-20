@@ -5,7 +5,7 @@ namespace SR.DA.Component;
 
 public class CompLayerExtension : ThingComp
 {
-    public CompProperties_LayerExtension Props => (CompProperties_LayerExtension)props;
+    private CompProperties_LayerExtension Props => (CompProperties_LayerExtension)props;
 
     public override void PostDraw()
     {

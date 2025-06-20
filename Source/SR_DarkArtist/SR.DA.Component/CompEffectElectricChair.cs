@@ -9,7 +9,7 @@ public class CompEffectElectricChair : CompUseEffect
 {
     private static readonly float dmgAmount = 5f;
 
-    public float DmgAmount { get; set; }
+    private float DmgAmount { get; set; }
 
     public override void Initialize(CompProperties props)
     {
@@ -21,8 +21,7 @@ public class CompEffectElectricChair : CompUseEffect
     {
         base.DoEffect(usedBy);
         usedBy.needs.mood.thoughts.memories.TryGainMemory(ThoughtDefOf.SR_Thought_Mistreated);
-        var dinfo = new DamageInfo(DamageDefOf.SR_Damage_ElecticShock, DmgAmount);
-        usedBy.TakeDamage(dinfo);
+        usedBy.TakeDamage(new DamageInfo(DamageDefOf.SR_Damage_ElecticShock, DmgAmount));
     }
 
     public override void ReceiveCompSignal(string signal)

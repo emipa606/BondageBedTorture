@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: cut -->
+  <SR_Damage_Cut.label>cut</SR_Damage_Cut.label>
+  <!-- EN: {0} has been cut to death. -->
+  <SR_Damage_Cut.deathMessage>{0} has been cut to death.</SR_Damage_Cut.deathMessage>
+  <!-- EN: electic shock -->
+  <SR_Damage_ElecticShock.label>electic shock</SR_Damage_ElecticShock.label>
+  <!-- EN: {0} has been killed by electrocution. -->
+  <SR_Damage_ElecticShock.deathMessage>{0} has been killed by electrocution.</SR_Damage_ElecticShock.deathMessage>
+  <!-- EN: stab -->
+  <SR_Damage_Stab.label>stab</SR_Damage_Stab.label>
+  <!-- EN: {0} has been stabbed to death. -->
+  <SR_Damage_Stab.deathMessage>{0} has been stabbed to death.</SR_Damage_Stab.deathMessage>
+</LanguageData>

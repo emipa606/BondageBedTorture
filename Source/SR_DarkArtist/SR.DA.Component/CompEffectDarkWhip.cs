@@ -12,7 +12,6 @@ public class CompEffectDarkWhip : CompUseEffect
     {
         base.DoEffect(usedBy);
         usedBy.needs.mood.thoughts.memories.TryGainMemory(ThoughtDefOf.SR_Thought_Mistreated);
-        var dinfo = new DamageInfo(DamageDefOf.Crush, dmgAmount);
-        usedBy.TakeDamage(dinfo);
+        usedBy.TakeDamage(new DamageInfo(DamageDefOf.Crush, dmgAmount));
     }
 }

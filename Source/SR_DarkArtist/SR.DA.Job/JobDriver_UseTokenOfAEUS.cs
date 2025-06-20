@@ -7,9 +7,9 @@ namespace SR.DA.Job;
 
 public class JobDriver_UseTokenOfAEUS : JobDriver_UseItem
 {
-    protected Verse.Thing Thing => job.GetTarget(TargetIndex.A).Thing;
+    private Verse.Thing Thing => job.GetTarget(TargetIndex.A).Thing;
 
-    protected Verse.Thing Target => job.GetTarget(TargetIndex.B).Thing;
+    private Verse.Thing Target => job.GetTarget(TargetIndex.B).Thing;
 
     public override bool TryMakePreToilReservations(bool errorOnFailed)
     {

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Shuihu Huangmen sword -->
+  <SR_MeleeWeapon_ShuihuHuangmenSword.label>Shuihu Huangmen sword</SR_MeleeWeapon_ShuihuHuangmenSword.label>
+  <!-- EN: The sacred sword, enshrined by every dark male witch in the dark shrine, has severe pain enough to make people faint. It is the imperial sword handed down from ancient times. It was called 暗黑江城 in ancient times. -->
+  <SR_MeleeWeapon_ShuihuHuangmenSword.description>The sacred sword, enshrined by every dark male witch in the dark shrine, has severe pain enough to make people faint. It is the imperial sword handed down from ancient times. It was called 暗黑江城 in ancient times.</SR_MeleeWeapon_ShuihuHuangmenSword.description>
+  <!-- EN: handle -->
+  <SR_MeleeWeapon_ShuihuHuangmenSword.tools.handle.label>handle</SR_MeleeWeapon_ShuihuHuangmenSword.tools.handle.label>
+  <!-- EN: point -->
+  <SR_MeleeWeapon_ShuihuHuangmenSword.tools.point.label>point</SR_MeleeWeapon_ShuihuHuangmenSword.tools.point.label>
+  <!-- EN: edge -->
+  <SR_MeleeWeapon_ShuihuHuangmenSword.tools.edge.label>edge</SR_MeleeWeapon_ShuihuHuangmenSword.tools.edge.label>
+</LanguageData>

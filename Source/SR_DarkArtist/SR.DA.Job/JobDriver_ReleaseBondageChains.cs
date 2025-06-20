@@ -8,7 +8,7 @@ namespace SR.DA.Job;
 
 public class JobDriver_ReleaseBondageChains : JobDriver_UseItem
 {
-    protected Verse.Thing Target => job.GetTarget(TargetIndex.A).Thing;
+    private Verse.Thing Target => job.GetTarget(TargetIndex.A).Thing;
 
     public override bool TryMakePreToilReservations(bool errorOnFailed)
     {

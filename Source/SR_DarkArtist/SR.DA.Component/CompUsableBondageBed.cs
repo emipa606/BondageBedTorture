@@ -53,10 +53,10 @@ public class CompUsableBondageBed : CompUsable
             }
 
             string str2 = "SR_Release_BondageBed".Translate(bbb.occupant.Label);
-            yield return new FloatMenuOption(str2, Action2, MenuOptionPriority.DisabledOption);
+            yield return new FloatMenuOption(str2, action2, MenuOptionPriority.DisabledOption);
             yield break;
 
-            void Action2()
+            void action2()
             {
                 TryReleasePrisoner(pawn, bbb.occupant);
             }
@@ -81,10 +81,10 @@ public class CompUsableBondageBed : CompUsable
 
             string str = "SR_BondageBed".Translate(pawn.Named(pawn.Name.ToString()),
                 prisoner.Named(prisoner.Name.ToString()));
-            yield return new FloatMenuOption(str, Action, MenuOptionPriority.DisabledOption);
+            yield return new FloatMenuOption(str, action, MenuOptionPriority.DisabledOption);
             continue;
 
-            void Action()
+            void action()
             {
                 TryStartUseJob(pawn, prisoner);
             }
@@ -97,7 +97,7 @@ public class CompUsableBondageBed : CompUsable
         }
     }
 
-    public virtual void TryReleasePrisoner(Pawn pawn, LocalTargetInfo extraTarget)
+    protected void TryReleasePrisoner(Pawn pawn, LocalTargetInfo extraTarget)
     {
         if (!pawn.CanReach((LocalTargetInfo)parent, PathEndMode.Touch, Danger.Some) ||
             !pawn.CanReserveAndReach(extraTarget, PathEndMode.Touch, Danger.Some))

@@ -6,7 +6,7 @@ namespace SR.DA.Thing;
 
 public class Building_AdvancedBondageBed : Building_BaseBondageBed
 {
-    private static readonly Color SheetColorNormal = new Color(0.6313726f, 71f / 85f, 0.7058824f);
+    private static readonly Color SheetColorNormal = new(0.6313726f, 71f / 85f, 0.7058824f);
 
     public override Color DrawColorTwo => SheetColorNormal;
 
@@ -17,7 +17,7 @@ public class Building_AdvancedBondageBed : Building_BaseBondageBed
             return;
         }
 
-        if (!SRMod.instance.Settings.ShowBound)
+        if (!SRMod.Instance.Settings.ShowBound)
         {
             return;
         }

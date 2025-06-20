@@ -68,10 +68,10 @@ public class CompUsableBondageChains : CompUsable
 
             string str = "SR_BondageChains".Translate(pawn.Named(pawn.Name.ToString()),
                 prisoner.Named(prisoner.Name.ToString()));
-            yield return new FloatMenuOption(str, Action, MenuOptionPriority.DisabledOption);
+            yield return new FloatMenuOption(str, action, MenuOptionPriority.DisabledOption);
             continue;
 
-            void Action()
+            void action()
             {
                 TryStartUseJob(pawn, prisoner);
             }

@@ -59,17 +59,10 @@ public class CompUsableElectricChair : CompUsable
             yield break;
         }
 
-        if (!cf.SwitchIsOn)
+        if (!cf.SwitchIsOn || !cptu.PowerOn)
         {
             yield return new FloatMenuOption($"{FloatMenuOptionLabel(pawn)} (" + "SR_NoPower".Translate() + ")", null,
                 MenuOptionPriority.DisabledOption);
-            yield break;
-        }
-
-        if (!cptu.PowerOn)
-        {
-            yield return new FloatMenuOption($"{FloatMenuOptionLabel(pawn)} (" + "SR_NoPower".Translate() + ")",
-                null, MenuOptionPriority.DisabledOption);
             yield break;
         }
 
@@ -91,10 +84,10 @@ public class CompUsableElectricChair : CompUsable
             }
 
             string str = "SR_ElectocutionChair".Translate(pawn.Label, prisoner.Label);
-            yield return new FloatMenuOption(str, Action, MenuOptionPriority.DisabledOption);
+            yield return new FloatMenuOption(str, action, MenuOptionPriority.DisabledOption);
             continue;
 
-            void Action()
+            void action()
             {
                 TryStartUseJob(pawn, prisoner);
             }

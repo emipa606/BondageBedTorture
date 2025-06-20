@@ -11,7 +11,7 @@ public class CompEffectBondageBed : CompUseEffect
     public override void DoEffect(Pawn usedBy)
     {
         base.DoEffect(usedBy);
-        var sR_Hediff_BondageBed = HediffDefOf.SR_Hediff_BondageBed;
+        var sRHediffBondageBed = HediffDefOf.SR_Hediff_BondageBed;
         var partsWithDef = usedBy.RaceProps.body.GetPartsWithDef(BodyPartDefOf.Arm);
         if (partsWithDef != null)
         {
@@ -19,7 +19,7 @@ public class CompEffectBondageBed : CompUseEffect
             {
                 if (item != null && !usedBy.health.hediffSet.PartIsMissing(item))
                 {
-                    usedBy.health.AddHediff(sR_Hediff_BondageBed, item);
+                    usedBy.health.AddHediff(sRHediffBondageBed, item);
                 }
             }
         }
@@ -34,7 +34,7 @@ public class CompEffectBondageBed : CompUseEffect
         {
             if (item2 != null && !usedBy.health.hediffSet.PartIsMissing(item2))
             {
-                usedBy.health.AddHediff(sR_Hediff_BondageBed, item2);
+                usedBy.health.AddHediff(sRHediffBondageBed, item2);
             }
         }
     }

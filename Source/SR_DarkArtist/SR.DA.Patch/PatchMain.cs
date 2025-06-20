@@ -9,12 +9,9 @@ namespace SR.DA.Patch;
 [StaticConstructorOnStartup]
 public class PatchMain
 {
-    public static readonly Harmony instance;
-
     static PatchMain()
     {
-        instance = new Harmony("SR.DarkArtist");
-        instance.PatchAll(Assembly.GetExecutingAssembly());
+        new Harmony("SR.DarkArtist").PatchAll(Assembly.GetExecutingAssembly());
     }
 
     public static void RemoveBondadgeHediff(Pawn pawn)

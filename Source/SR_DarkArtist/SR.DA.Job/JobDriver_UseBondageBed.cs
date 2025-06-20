@@ -10,9 +10,9 @@ namespace SR.DA.Job;
 
 public class JobDriver_UseBondageBed : JobDriver_UseItem
 {
-    protected Verse.Thing Thing => job.GetTarget(TargetIndex.A).Thing;
+    private Verse.Thing Thing => job.GetTarget(TargetIndex.A).Thing;
 
-    protected Verse.Thing Target => job.GetTarget(TargetIndex.B).Thing;
+    private Verse.Thing Target => job.GetTarget(TargetIndex.B).Thing;
 
     public override bool TryMakePreToilReservations(bool errorOnFailed)
     {
@@ -42,9 +42,9 @@ public class JobDriver_UseBondageBed : JobDriver_UseItem
             {
                 if (!Thing.Destroyed)
                 {
-                    var building_BondageBed = (Building_BaseBondageBed)Thing ??
-                                              throw new Exception("cant find Building_BondageBed");
-                    building_BondageBed.SetOccupant(prisoner);
+                    var buildingBondageBed = (Building_BaseBondageBed)Thing ??
+                                             throw new Exception("cant find Building_BondageBed");
+                    buildingBondageBed.SetOccupant(prisoner);
                 }
                 else
                 {

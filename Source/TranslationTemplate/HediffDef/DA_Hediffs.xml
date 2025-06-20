@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: bondage bed -->
+  <SR_Hediff_BondageBed.label>bondage bed</SR_Hediff_BondageBed.label>
+  <!-- EN: bondage bed -->
+  <SR_Hediff_BondageBed.description>bondage bed</SR_Hediff_BondageBed.description>
+  <!-- EN: bondage bed -->
+  <SR_Hediff_BondageBed.labelNoun>bondage bed</SR_Hediff_BondageBed.labelNoun>
+  <!-- EN: Chains -->
+  <SR_Hediff_BondageChains.label>Chains</SR_Hediff_BondageChains.label>
+  <!-- EN: Chains -->
+  <SR_Hediff_BondageChains.description>Chains</SR_Hediff_BondageChains.description>
+  <!-- EN: Chains -->
+  <SR_Hediff_BondageChains.labelNoun>Chains</SR_Hediff_BondageChains.labelNoun>
+  <!-- EN: cut -->
+  <SR_Hediff_Cut.label>cut</SR_Hediff_Cut.label>
+  <!-- EN: A cut. -->
+  <SR_Hediff_Cut.description>A cut.</SR_Hediff_Cut.description>
+  <!-- EN: Cut off -->
+  <SR_Hediff_Cut.injuryProps.destroyedLabel>Cut off</SR_Hediff_Cut.injuryProps.destroyedLabel>
+  <!-- EN: Cut out -->
+  <SR_Hediff_Cut.injuryProps.destroyedOutLabel>Cut out</SR_Hediff_Cut.injuryProps.destroyedOutLabel>
+  <!-- EN: a cut -->
+  <SR_Hediff_Cut.labelNoun>a cut</SR_Hediff_Cut.labelNoun>
+  <!-- EN: {0} in the {1} -->
+  <SR_Hediff_Cut.labelNounPretty>{0} in the {1}</SR_Hediff_Cut.labelNounPretty>
+  <!-- EN: electic shock -->
+  <SR_Hediff_ElectricChair.label>electic shock</SR_Hediff_ElectricChair.label>
+  <!-- EN: electic shock -->
+  <SR_Hediff_ElectricChair.description>electic shock</SR_Hediff_ElectricChair.description>
+  <!-- EN: electic shock -->
+  <SR_Hediff_ElectricChair.labelNoun>electic shock</SR_Hediff_ElectricChair.labelNoun>
+  <!-- EN: {0} in the {1} -->
+  <SR_Hediff_ElectricChair.labelNounPretty>{0} in the {1}</SR_Hediff_ElectricChair.labelNounPretty>
+  <!-- EN: stab -->
+  <SR_Hediff_Stab.label>stab</SR_Hediff_Stab.label>
+  <!-- EN: A stab wound. -->
+  <SR_Hediff_Stab.description>A stab wound.</SR_Hediff_Stab.description>
+  <!-- EN: Cut off -->
+  <SR_Hediff_Stab.injuryProps.destroyedLabel>Cut off</SR_Hediff_Stab.injuryProps.destroyedLabel>
+  <!-- EN: Cut out -->
+  <SR_Hediff_Stab.injuryProps.destroyedOutLabel>Cut out</SR_Hediff_Stab.injuryProps.destroyedOutLabel>
+  <!-- EN: a stab wound -->
+  <SR_Hediff_Stab.labelNoun>a stab wound</SR_Hediff_Stab.labelNoun>
+  <!-- EN: {0} in the {1} -->
+  <SR_Hediff_Stab.labelNounPretty>{0} in the {1}</SR_Hediff_Stab.labelNounPretty>
+</LanguageData>

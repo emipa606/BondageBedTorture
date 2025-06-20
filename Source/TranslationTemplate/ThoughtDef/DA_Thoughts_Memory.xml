@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: maltreat -->
+  <SR_Thought_Maltreat.stages.maltreat.label>maltreat</SR_Thought_Maltreat.stages.maltreat.label>
+  <!-- EN: don't stop. -->
+  <SR_Thought_Maltreat.stages.maltreat.description>don't stop.</SR_Thought_Maltreat.stages.maltreat.description>
+  <!-- EN: mistreated -->
+  <SR_Thought_Mistreated.stages.mistreated.label>mistreated</SR_Thought_Mistreated.stages.mistreated.label>
+  <!-- EN: Ou that's hurt. -->
+  <SR_Thought_Mistreated.stages.mistreated.description>Ou that's hurt.</SR_Thought_Mistreated.stages.mistreated.description>
+</LanguageData>
