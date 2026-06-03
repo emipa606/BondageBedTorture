@@ -28,4 +28,26 @@
   <SR_NoTarget>Es gibt kein Ziel</SR_NoTarget>
   <SR_Torture>Folter auf {1} anwenden</SR_Torture>
   <SR_BrainWashing>{0}entscheiden Sie sich für den Beitritt</SR_BrainWashing>
+  <!-- <SR_Release>解放</SR_Release> -->
+  <!-- <SR_ElectricShock>电击</SR_ElectricShock> -->
+  <!-- <SR_HighVoltageOn>已启动高电压模式</SR_HighVoltageOn> -->
+  <!-- <SR_HighVoltageOff>已关闭高电压模式</SR_HighVoltageOff> -->
+  <!-- <SR_CommandDesignateHighVoltageLabel>提高电压</SR_CommandDesignateHighVoltageLabel> -->
+  <!-- <SR_CommandDesignateHighVoltageDesc>不开玩笑，这个电压容易发生人命事故</SR_CommandDesignateHighVoltageDesc> -->
+  <!-- <SR_Release_BondageBed>解除{0}的束缚(束缚床)</SR_Release_BondageBed> -->
+  <!-- <SR_Release_BondageChains>解除{0}的束缚(锁链)</SR_Release_BondageChains> -->
+  <!-- <SR_CantUse>无法使用</SR_CantUse> -->
+  <!-- <SR_CantRemove>无法移除锁链</SR_CantRemove> -->
+  <!-- <SR_Forbid>监管工作禁用</SR_Forbid> -->
+  <!-- <SR_NoPrisoner>没有囚犯</SR_NoPrisoner> -->
+  <!-- <SR_NoPower>电力不足</SR_NoPower> -->
+  <!-- <SR_BondageBed>将{1}绑到束缚床上</SR_BondageBed> -->
+  <!-- <SR_BondageChains>使用锁链将{1}捆绑</SR_BondageChains> -->
+  <!-- <SR_HasChains>{0}已经被捆绑</SR_HasChains> -->
+  <!-- <SR_ElectocutionChair>对{1}实施电刑</SR_ElectocutionChair> -->
+  <!-- <SR_ElectrocutionFailure>电力中断导致{0}电刑失败</SR_ElectrocutionFailure> -->
+  <!-- <SR_Reserved>{0}已被预留给其他人</SR_Reserved> -->
+  <!-- <SR_NoTarget>没有目标</SR_NoTarget> -->
+  <!-- <SR_Torture>对{1}使用刑具</SR_Torture> -->
+  <!-- <SR_BrainWashing>{0}屈服了，决定做一名平家boy</SR_BrainWashing> -->
 </LanguageData>

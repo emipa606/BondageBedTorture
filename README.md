@@ -1,6 +1,6 @@
 # [BondageBed Torture (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2846468041)
 
-![Image](https://i.imgur.com/buuPQel.png)
+![Image](https://img.litet.net/logos/Info.png)
 
 Update of Shadowrabbit,金兔子拉面s mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=2094933315
@@ -8,9 +8,9 @@ with permission.
 
 There is a reworked version of the original by the same author [[SR]Bondage Furniture](https://steamcommunity.com/sharedfiles/filedetails/?id=2610044320) as well. That mod does not rely on Harmony and is built to have better compatibility with other mods in mind.
 
-![Image](https://i.imgur.com/pufA0kM.png)
+![Image](https://img.litet.net/logos/Notice.png)
 	
-![Image](https://i.imgur.com/Z4GOv8H.png)
+![Image](https://img.litet.net/logos/OriginalDescription.png)
 
 This mod contains two types of bondage bed which can be used to punish prisoners or help colonists through the withdrawal, four types of bed , and six types of torture.
 
@@ -45,13 +45,13 @@ If you have any problems, tell me in comments, please.
 ④Select another colonist, right click on the [Advanced bondage bed], and select the colonizer to be tied in the submenu
 ⑤Another colonist will bring the target to the bed
 
-![Image](https://i.imgur.com/PwoNOj4.png)
+![Image](https://img.litet.net/logos/ReportingIssues.png)
 
 
 
 -  See if the the error persists if you just have this mod and its requirements active.
 -  If not, try adding your other mods until it happens again.
--  Post your error-log using [HugsLib](https://steamcommunity.com/workshop/filedetails/?id=818773962) or the standalone [Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) and command Ctrl+F12
+-  Always post your log using the [Log Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404)
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
@@ -59,4 +59,4 @@ If you have any problems, tell me in comments, please.
 
  
 
-[![Image](https://img.shields.io/github/v/release/emipa606/BondageBedTorture?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2846468041) | tags:  restraints
+[![Image](https://img.shields.io/github/v/release/emipa606/BondageBedTorture?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2846468041) | tags: restraints

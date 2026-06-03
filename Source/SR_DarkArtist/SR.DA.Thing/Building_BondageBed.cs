@@ -41,5 +41,9 @@ public class Building_BondageBed : Building_BaseBondageBed
     {
         base.SpawnSetup(map, respawningAfterLoad);
         ForPrisoners = true;
+        if (!respawningAfterLoad)
+        {
+            this.GetRoom()?.Notify_RoomShapeChanged();
+        }
     }
 }
