@@ -14,37 +14,37 @@ public class CompUsableBondageBed : CompUsable
         return "SR_CantUse".Translate();
     }
 
-    public override IEnumerable<FloatMenuOption> CompFloatMenuOptions(Pawn pawn)
+    public override IEnumerable<FloatMenuOption> CompFloatMenuOptions(Pawn myPawn)
     {
-        if (parent is not Building_BaseBondageBed bbb || pawn.Map == null || pawn.Map != Find.CurrentMap)
+        if (parent is not Building_BaseBondageBed bbb || myPawn.Map == null || myPawn.Map != Find.CurrentMap)
         {
             yield break;
         }
 
-        if (!pawn.CanReach((LocalTargetInfo)parent, PathEndMode.Touch, Danger.Deadly))
+        if (!myPawn.CanReach((LocalTargetInfo)parent, PathEndMode.Touch, Danger.Deadly))
         {
-            yield return new FloatMenuOption($"{FloatMenuOptionLabel(pawn)} (" + "NoPath".Translate() + ")", null,
+            yield return new FloatMenuOption($"{FloatMenuOptionLabel(myPawn)} (" + "NoPath".Translate() + ")", null,
                 MenuOptionPriority.DisabledOption);
             yield break;
         }
 
-        if (!pawn.health.capacities.CapableOf(PawnCapacityDefOf.Manipulation))
+        if (!myPawn.health.capacities.CapableOf(PawnCapacityDefOf.Manipulation))
         {
-            yield return new FloatMenuOption($"{FloatMenuOptionLabel(pawn)} (" + "Incapable".Translate() + ")", null,
+            yield return new FloatMenuOption($"{FloatMenuOptionLabel(myPawn)} (" + "Incapable".Translate() + ")", null,
                 MenuOptionPriority.DisabledOption);
             yield break;
         }
 
-        if (pawn.WorkTagIsDisabled(WorkTypeDefOf.Warden.workTags))
+        if (myPawn.WorkTagIsDisabled(WorkTypeDefOf.Warden.workTags))
         {
-            yield return new FloatMenuOption($"{FloatMenuOptionLabel(pawn)} (" + "SR_Forbid".Translate() + ")", null,
+            yield return new FloatMenuOption($"{FloatMenuOptionLabel(myPawn)} (" + "SR_Forbid".Translate() + ")", null,
                 MenuOptionPriority.DisabledOption);
             yield break;
         }
 
         if (bbb.occupant != null)
         {
-            if (!pawn.CanReserve(bbb.occupant))
+            if (!myPawn.CanReserve(bbb.occupant))
             {
                 yield return new FloatMenuOption(
                     $"{FloatMenuOptionLabel(bbb.occupant)} (" + "SR_Reserved".Translate() + ")", null,
@@ -58,20 +58,20 @@ public class CompUsableBondageBed : CompUsable
 
             void action2()
             {
-                TryReleasePrisoner(pawn, bbb.occupant);
+                TryReleasePrisoner(myPawn, bbb.occupant);
             }
         }
 
         var hasPrisoner = false;
-        foreach (var prisoner in pawn.Map.mapPawns.AllPawns)
+        foreach (var prisoner in myPawn.Map.mapPawns.AllPawns)
         {
-            if (prisoner == pawn || !prisoner.Spawned || !prisoner.IsPrisonerOfColony)
+            if (prisoner == myPawn || !prisoner.Spawned || !prisoner.IsPrisonerOfColony)
             {
                 continue;
             }
 
             hasPrisoner = true;
-            if (!pawn.CanReserve(prisoner))
+            if (!myPawn.CanReserve(prisoner))
             {
                 yield return new FloatMenuOption(
                     $"{FloatMenuOptionLabel(prisoner)} (" + "SR_Reserved".Translate(prisoner.Label) + ")", null,
@@ -79,20 +79,20 @@ public class CompUsableBondageBed : CompUsable
                 continue;
             }
 
-            string str = "SR_BondageBed".Translate(pawn.Named(pawn.Name.ToString()),
+            string str = "SR_BondageBed".Translate(myPawn.Named(myPawn.Name.ToString()),
                 prisoner.Named(prisoner.Name.ToString()));
             yield return new FloatMenuOption(str, action, MenuOptionPriority.DisabledOption);
             continue;
 
             void action()
             {
-                TryStartUseJob(pawn, prisoner);
+                TryStartUseJob(myPawn, prisoner);
             }
         }
 
         if (!hasPrisoner)
         {
-            yield return new FloatMenuOption($"{FloatMenuOptionLabel(pawn)} (" + "SR_NoPrisoner".Translate() + ")",
+            yield return new FloatMenuOption($"{FloatMenuOptionLabel(myPawn)} (" + "SR_NoPrisoner".Translate() + ")",
                 null, MenuOptionPriority.DisabledOption);
         }
     }

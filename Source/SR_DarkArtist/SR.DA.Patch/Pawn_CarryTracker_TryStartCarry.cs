@@ -10,9 +10,9 @@ using HediffDefOf = SR.DA.Hediff.HediffDefOf;
 namespace SR.DA.Patch;
 
 [HarmonyPatch]
-internal class Pawn_CarryTracker_TryStartCarry
+internal static class Pawn_CarryTracker_TryStartCarry
 {
-    private static IEnumerable<MethodBase> TargetMethods()
+    public static IEnumerable<MethodBase> TargetMethods()
     {
         yield return AccessTools.Method(typeof(Pawn_CarryTracker), nameof(Pawn_CarryTracker.TryStartCarry),
             [typeof(Verse.Thing)]);
@@ -20,7 +20,7 @@ internal class Pawn_CarryTracker_TryStartCarry
             [typeof(Verse.Thing), typeof(int), typeof(bool)]);
     }
 
-    private static void Prefix(Verse.Thing item)
+    public static void Prefix(Verse.Thing item)
     {
         if (item == null || item.GetType() != typeof(Pawn))
         {

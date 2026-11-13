@@ -5,9 +5,9 @@ using Verse;
 namespace SR.DA.Patch;
 
 [HarmonyPatch(typeof(Room), nameof(Room.Notify_RoomShapeChanged))]
-internal class Room_Notify_RoomShapeChanged
+internal static class Room_Notify_RoomShapeChanged
 {
-    private static void Postfix(ref Room __instance)
+    public static void Postfix(ref Room __instance)
     {
         foreach (var containedBed in __instance.ContainedBeds)
         {

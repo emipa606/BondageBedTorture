@@ -6,45 +6,45 @@
   <Folder Name="/.github/">
     <File Path="../.github/copilot-instructions.md" />
   </Folder>
-  <Folder Name="/XML/1.6/Defs/Maneuvers/">
-    <File Path="../1.6/Defs/Maneuvers/DA_Maneuvers.xml" />
-  </Folder>
-  <Folder Name="/XML/1.6/Defs/JobDefs/">
-    <File Path="../1.6/Defs/JobDefs/DA_Jobs.xml" />
-  </Folder>
-  <Folder Name="/XML/1.6/Defs/HediffDefs/">
-    <File Path="../1.6/Defs/HediffDefs/DA_Hediffs.xml" />
-  </Folder>
-  <Folder Name="/XML/1.6/Defs/ThingDefs_Buildings/">
-    <File Path="../1.6/Defs/ThingDefs_Buildings/DA_Buildings_Furniture.xml" />
-  </Folder>
-  <Folder Name="/XML/1.6/Defs/DamageDefs/">
-    <File Path="../1.6/Defs/DamageDefs/DA_Damages.xml" />
-  </Folder>
   <Folder Name="/XML/Languages/English/Keyed/">
     <File Path="../Languages/English/Keyed/Comps.xml" />
   </Folder>
   <Folder Name="/XML/About/">
     <File Path="../About/about.xml" />
   </Folder>
-  <Folder Name="/XML/1.6/Defs/ThingDefs_Items/">
-    <File Path="../1.6/Defs/ThingDefs_Items/DA_Items.xml" />
+  <Folder Name="/XML/1.7/Defs/DamageDefs/Weapons/">
+    <File Path="../1.7/Defs/DamageDefs/Weapons/DA_MeleeNeolithic.xml" />
   </Folder>
-  <Folder Name="/XML/1.6/Defs/DamageDefs/Weapons/">
-    <File Path="../1.6/Defs/DamageDefs/Weapons/DA_MeleeNeolithic.xml" />
+  <Folder Name="/XML/1.7/Defs/Maneuvers/">
+    <File Path="../1.7/Defs/Maneuvers/DA_Maneuvers.xml" />
   </Folder>
-  <Folder Name="/XML/1.6/Defs/ThoughtDefs/">
-    <File Path="../1.6/Defs/ThoughtDefs/DA_Thoughts_Memory.xml" />
-    <File Path="../1.6/Defs/ThoughtDefs/DA_Thoughts_Situation.xml" />
+  <Folder Name="/XML/1.7/Patches/">
+    <File Path="../1.7/Patches/Races_Humanlike_Patch.xml" />
   </Folder>
-  <Folder Name="/XML/1.6/Defs/ResearchProjectDefs/">
-    <File Path="../1.6/Defs/ResearchProjectDefs/DA_ResearchProjects_1.xml" />
-    <File Path="../1.6/Defs/ResearchProjectDefs/DA_ResearchTabs.xml" />
+  <Folder Name="/XML/1.7/Defs/DamageDefs/">
+    <File Path="../1.7/Defs/DamageDefs/DA_Damages.xml" />
   </Folder>
-  <Folder Name="/XML/1.6/Patches/">
-    <File Path="../1.6/Patches/Races_Humanlike_Patch.xml" />
+  <Folder Name="/XML/1.7/Defs/JobDefs/">
+    <File Path="../1.7/Defs/JobDefs/DA_Jobs.xml" />
   </Folder>
-  <Folder Name="/XML/1.6/Defs/ToolCapacityDefs/">
-    <File Path="../1.6/Defs/ToolCapacityDefs/DA_ToolCapacity.xml" />
+  <Folder Name="/XML/1.7/Defs/HediffDefs/">
+    <File Path="../1.7/Defs/HediffDefs/DA_Hediffs.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/ThingDefs_Buildings/">
+    <File Path="../1.7/Defs/ThingDefs_Buildings/DA_Buildings_Furniture.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/ThingDefs_Items/">
+    <File Path="../1.7/Defs/ThingDefs_Items/DA_Items.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/ToolCapacityDefs/">
+    <File Path="../1.7/Defs/ToolCapacityDefs/DA_ToolCapacity.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/ResearchProjectDefs/">
+    <File Path="../1.7/Defs/ResearchProjectDefs/DA_ResearchProjects_1.xml" />
+    <File Path="../1.7/Defs/ResearchProjectDefs/DA_ResearchTabs.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/ThoughtDefs/">
+    <File Path="../1.7/Defs/ThoughtDefs/DA_Thoughts_Memory.xml" />
+    <File Path="../1.7/Defs/ThoughtDefs/DA_Thoughts_Situation.xml" />
   </Folder>
 </Solution>

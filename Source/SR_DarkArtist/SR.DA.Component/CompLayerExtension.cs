@@ -17,10 +17,9 @@ public class CompLayerExtension : ThingComp
 
         foreach (var currentGas in Props.gas)
         {
-            currentGas.graphicData.Graphic
-                .Draw(
-                    GenThing.TrueCenter(parent.Position, parent.Rotation, parent.def.size,
-                        currentGas.altitudeLayer.AltitudeFor()), parent.Rotation, parent);
+            currentGas.graphicData.Graphic.Draw(
+                GenThing.TrueCenter(parent.Position, parent.Rotation, parent.def.size,
+                    currentGas.altitudeLayer.AltitudeFor()), parent.Rotation, parent);
         }
     }
 }

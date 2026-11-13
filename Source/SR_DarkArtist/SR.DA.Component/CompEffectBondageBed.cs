@@ -1,3 +1,4 @@
+using System.Linq;
 using RimWorld;
 using SR.DA.Patch;
 using SR.DA.Thing;
@@ -15,12 +16,10 @@ public class CompEffectBondageBed : CompUseEffect
         var partsWithDef = usedBy.RaceProps.body.GetPartsWithDef(BodyPartDefOf.Arm);
         if (partsWithDef != null)
         {
-            foreach (var item in partsWithDef)
+            foreach (var item in partsWithDef.Where(item =>
+                         item != null && !usedBy.health.hediffSet.PartIsMissing(item)))
             {
-                if (item != null && !usedBy.health.hediffSet.PartIsMissing(item))
-                {
-                    usedBy.health.AddHediff(sRHediffBondageBed, item);
-                }
+                usedBy.health.AddHediff(sRHediffBondageBed, item);
             }
         }
 
@@ -30,12 +29,10 @@ public class CompEffectBondageBed : CompUseEffect
             return;
         }
 
-        foreach (var item2 in partsWithDef2)
+        foreach (var item2 in partsWithDef2.Where(item2 =>
+                     item2 != null && !usedBy.health.hediffSet.PartIsMissing(item2)))
         {
-            if (item2 != null && !usedBy.health.hediffSet.PartIsMissing(item2))
-            {
-                usedBy.health.AddHediff(sRHediffBondageBed, item2);
-            }
+            usedBy.health.AddHediff(sRHediffBondageBed, item2);
         }
     }
 

@@ -8,9 +8,9 @@ using HediffDefOf = SR.DA.Hediff.HediffDefOf;
 namespace SR.DA.Patch;
 
 [HarmonyPatch(typeof(Pawn), nameof(Pawn.Kill))]
-internal class Pawn_Kill
+internal static class Pawn_Kill
 {
-    private static bool Prefix(ref Pawn __instance)
+    public static bool Prefix(ref Pawn __instance)
     {
         var inBondadgeBed = false;
         foreach (var hediff in __instance.health.hediffSet.hediffs)

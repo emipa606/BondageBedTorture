@@ -12,44 +12,44 @@ public class CompUsableTorture : CompUsable
         return "SR_CantUse".Translate();
     }
 
-    public override IEnumerable<FloatMenuOption> CompFloatMenuOptions(Pawn pawn)
+    public override IEnumerable<FloatMenuOption> CompFloatMenuOptions(Pawn myPawn)
     {
-        if (pawn.Map == null || pawn.Map != Find.CurrentMap)
+        if (myPawn.Map == null || myPawn.Map != Find.CurrentMap)
         {
             yield break;
         }
 
-        if (!pawn.CanReach((LocalTargetInfo)parent, PathEndMode.Touch, Danger.Deadly))
+        if (!myPawn.CanReach((LocalTargetInfo)parent, PathEndMode.Touch, Danger.Deadly))
         {
-            yield return new FloatMenuOption($"{FloatMenuOptionLabel(pawn)} (" + "NoPath".Translate() + ")", null,
+            yield return new FloatMenuOption($"{FloatMenuOptionLabel(myPawn)} (" + "NoPath".Translate() + ")", null,
                 MenuOptionPriority.DisabledOption);
             yield break;
         }
 
-        if (!pawn.CanReserve(parent))
+        if (!myPawn.CanReserve(parent))
         {
-            yield return new FloatMenuOption($"{FloatMenuOptionLabel(pawn)} (" + "Reserved".Translate() + ")", null,
+            yield return new FloatMenuOption($"{FloatMenuOptionLabel(myPawn)} (" + "Reserved".Translate() + ")", null,
                 MenuOptionPriority.DisabledOption);
             yield break;
         }
 
-        if (!pawn.health.capacities.CapableOf(PawnCapacityDefOf.Manipulation))
+        if (!myPawn.health.capacities.CapableOf(PawnCapacityDefOf.Manipulation))
         {
-            yield return new FloatMenuOption($"{FloatMenuOptionLabel(pawn)} (" + "Incapable".Translate() + ")", null,
+            yield return new FloatMenuOption($"{FloatMenuOptionLabel(myPawn)} (" + "Incapable".Translate() + ")", null,
                 MenuOptionPriority.DisabledOption);
             yield break;
         }
 
         var hasPrisoner = false;
-        foreach (var prisoner in pawn.Map.mapPawns.AllPawns)
+        foreach (var prisoner in myPawn.Map.mapPawns.AllPawns)
         {
-            if (prisoner == pawn || !prisoner.Spawned || !prisoner.IsPrisonerOfColony)
+            if (prisoner == myPawn || !prisoner.Spawned || !prisoner.IsPrisonerOfColony)
             {
                 continue;
             }
 
             hasPrisoner = true;
-            if (!pawn.CanReserve(prisoner))
+            if (!myPawn.CanReserve(prisoner))
             {
                 yield return new FloatMenuOption(
                     $"{FloatMenuOptionLabel(prisoner)} (" + "SR_Reserved".Translate(prisoner.Label) + ")", null,
@@ -57,20 +57,20 @@ public class CompUsableTorture : CompUsable
                 continue;
             }
 
-            string str = "SR_Torture".Translate(pawn.Named(pawn.Name.ToString()),
+            string str = "SR_Torture".Translate(myPawn.Named(myPawn.Name.ToString()),
                 prisoner.Named(prisoner.Name.ToString()));
             yield return new FloatMenuOption(str, action, MenuOptionPriority.DisabledOption);
             continue;
 
             void action()
             {
-                TryStartUseJob(pawn, prisoner);
+                TryStartUseJob(myPawn, prisoner);
             }
         }
 
         if (!hasPrisoner)
         {
-            yield return new FloatMenuOption($"{FloatMenuOptionLabel(pawn)} (" + "SR_NoPrisoner".Translate() + ")",
+            yield return new FloatMenuOption($"{FloatMenuOptionLabel(myPawn)} (" + "SR_NoPrisoner".Translate() + ")",
                 null, MenuOptionPriority.DisabledOption);
         }
     }

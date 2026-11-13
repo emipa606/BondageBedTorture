@@ -27,7 +27,7 @@ public class Building_ElectricChair : Building
         OnPowerChanged();
     }
 
-    public override IEnumerable<FloatMenuOption> GetFloatMenuOptions(Pawn myPawn)
+    public override IEnumerable<FloatMenuOption> GetFloatMenuOptions(Pawn selPawn)
     {
         if (AllComps == null)
         {
@@ -36,7 +36,7 @@ public class Building_ElectricChair : Building
 
         foreach (var thingComp in AllComps)
         {
-            foreach (var item in thingComp.CompFloatMenuOptions(myPawn))
+            foreach (var item in thingComp.CompFloatMenuOptions(selPawn))
             {
                 yield return item;
             }
@@ -51,6 +51,13 @@ public class Building_ElectricChair : Building
 
     private void OnPowerChanged()
     {
-        cpt.PowerOutput = !cpt.PowerOn ? 0f : isUsing ? 0f - workingPower : 0f - cpt.Props.PowerConsumption;
+        if (!cpt.PowerOn)
+        {
+            cpt.PowerOutput = 0f;
+        }
+        else
+        {
+            cpt.PowerOutput = isUsing ? 0f - workingPower : 0f - cpt.Props.PowerConsumption;
+        }
     }
 }

@@ -10,7 +10,6 @@ public class CompHighVoltage : ThingComp
     private const string HighVoltageOnSignal = "HighVoltageOn";
 
     private const string HighVoltageOffSignal = "HighVoltageOff";
-    private Texture2D cachedCommandTex;
 
     private bool switchIsOn;
 
@@ -20,12 +19,12 @@ public class CompHighVoltage : ThingComp
     {
         get
         {
-            if (cachedCommandTex == null)
+            if (field == null)
             {
-                cachedCommandTex = ContentFinder<Texture2D>.Get(Props.commandTexture);
+                field = ContentFinder<Texture2D>.Get(Props.commandTexture);
             }
 
-            return cachedCommandTex;
+            return field;
         }
     }
 

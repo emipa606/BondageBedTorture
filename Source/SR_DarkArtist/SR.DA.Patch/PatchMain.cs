@@ -7,7 +7,7 @@ using Verse;
 namespace SR.DA.Patch;
 
 [StaticConstructorOnStartup]
-public class PatchMain
+public static class PatchMain
 {
     static PatchMain()
     {

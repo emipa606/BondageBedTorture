@@ -5,9 +5,9 @@ using SR.DA.Thing;
 namespace SR.DA.Patch;
 
 [HarmonyPatch(typeof(RestUtility), nameof(RestUtility.IsValidBedFor))]
-internal class RestUtility_IsValidBedFor
+internal static class RestUtility_IsValidBedFor
 {
-    private static bool Prefix(ref bool __result, Verse.Thing bedThing)
+    public static bool Prefix(ref bool __result, Verse.Thing bedThing)
     {
         if (bedThing is not Building_BaseBondageBed)
         {
